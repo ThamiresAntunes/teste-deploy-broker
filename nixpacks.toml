@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["php82", "php82Extensions.pcntl", "php82Extensions.sockets", "php82Extensions.posix"]
-
-[phases.install]
-cmds = ["cd php_broker && composer install --no-dev --optimize-autoloader"]
-
-[start]
-cmd = "cd php_broker && php broker.php start"
